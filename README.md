@@ -69,3 +69,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # Memorama
+* Images were taken from: http://vectoresyotrascosas.blogspot.com/2018/04/loteria-tradicional-mexicana.html
+* Card flip animation was made based on: https://3dtransforms.desandro.com/card-flip

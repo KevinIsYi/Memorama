@@ -1,0 +1,12 @@
+:root {
+    --blue-color: #333399;
+    --gray-color: #252525;
+    --orange-color: #ff6803; 
+    --pink-color: #ef0f73;
+    --roboto: 'Roboto', sans-serif;
+    --lobster: 'Lobster', cursive;
+}
+
+.round-border {
+    border-radius: 5px;
+}
