@@ -6,6 +6,10 @@
     --lobster: 'Lobster', cursive;
 }
 
+*:focus {
+    outline: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -19,11 +23,19 @@ button {
     border-radius: 5px;
 }
 
+.no-border {
+    border-style: none;
+}
+
 .center-xy {
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.center-x {
+    margin: 0 auto;
 }
 
 .text-center {
@@ -44,4 +56,8 @@ button {
 
 .yellow-text {
     color: var(--yellow-color);
+}
+
+.bg-light-blue {
+    background-color: var(--blue-light);
 }

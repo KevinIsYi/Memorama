@@ -7,14 +7,14 @@ export const LandingScreen = () => {
             <img src="./assets/logo.png" alt="logo" className="logo-image" />
             <div className="options text-center">
                 <Link
-                    to="/play"
+                    to="/game/play"
                     className="roboto bold yellow-text option-button"
                 >
                     
                         PLAY
                 </Link>
                 <Link
-                    to="/ranking"
+                    to="/game/ranking"
                     className="roboto bold yellow-text option-button"
                 >
                     RANKING

@@ -1,0 +1,44 @@
+.grid-options-button {
+    font-size: 20px;
+    margin: 20px 0;
+    max-width: 175px;
+    padding: 10px;
+    width: 50%;
+}
+
+.input-style {
+    height: 30px;
+    padding: 5px;
+}
+
+.first-input {
+    margin-bottom: 25px;
+}
+
+.grid-size-options {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+}
+
+@media (min-width: 468px) {
+    .grid-options {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-options {
+        width: 60%;
+    }
+    .input-grid-options {
+        align-items: center;
+        display: flex;
+    }
+    .first-input {
+        margin: 0 30px 0 0;
+    }
+}
