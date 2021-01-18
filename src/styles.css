@@ -1,12 +1,47 @@
 :root {
-    --blue-color: #333399;
+    --blue-light: #e5f2f2;
     --gray-color: #252525;
-    --orange-color: #ff6803; 
-    --pink-color: #ef0f73;
+    --yellow-color: #ffc100;
     --roboto: 'Roboto', sans-serif;
     --lobster: 'Lobster', cursive;
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    border-radius: 50px;
+    border-style: none;
+}
+
 .round-border {
     border-radius: 5px;
+}
+
+.center-xy {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.roboto {
+    font-family: var(--roboto);
+}
+
+.lobster {
+    font-family: var(--lobster);
+}
+
+.yellow-text {
+    color: var(--yellow-color);
 }

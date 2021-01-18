@@ -1,11 +1,9 @@
-import { Card } from './components/Card/Card';
+import { AppRouter } from './router/AppRouter';
 
 const App = () => {
-  return (
-    <div className="App">
-        <Card />
-    </div>
-  );
+    return (
+        <AppRouter />
+    );
 }
 
 export default App;

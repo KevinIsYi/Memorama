@@ -1,0 +1,30 @@
+body {
+    background-color: #37718b;
+}
+
+.logo-image {
+    min-width: 100%;
+    width: 300px;
+}
+
+.main-text {
+    font-size: 30px;      
+}
+
+.options {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.option-button {
+    padding: 10px;
+    transition: all ease-in 0.3s;
+    background-color: var(--blue-light);
+    border-radius: 50px;
+}
+
+.option-button:hover {
+    background-color: var(--yellow-color);
+    color: white;
+}
