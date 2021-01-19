@@ -21,7 +21,7 @@ export const Card = ({ image }) => {
                 <div className="card__face card__face--front round-border">
                     <img
                         src={ `/assets/images/${ image }.jpg` }
-                        alt="apache"
+                        alt={image}
                         className="image-style"
                     />
                 </div>
