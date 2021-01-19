@@ -1,10 +1,13 @@
 import { AppRouter } from './routers/AppRouter';
+import { Provider } from 'react-redux'
+import { store } from './store/store';
 
 const App = () => {
 
-    console.log("Desde app");
     return (
-        <AppRouter />
+        <Provider store={ store }>
+            <AppRouter />
+        </Provider>
     );
 }
 
