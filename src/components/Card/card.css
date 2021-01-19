@@ -38,6 +38,6 @@ body {
 }
 
 .card__face--back {
-    background: var(--orange-color);
+    background: var(--yellow-color);
     transform: rotateY(180deg);
 }

@@ -4,7 +4,6 @@ import { GameScreen } from "../screens/GameScreen/GameScreen"
 import { RankingScreen } from "../screens/RankingScreen/RankingScreen"
 
 export const GameRouter = () => {
-    console.log("ROUTERGAME, Router");
     return (
         <>
             <Header />
@@ -12,9 +11,10 @@ export const GameRouter = () => {
                 <Route path="/game/play">
                     <GameScreen />
                 </Route>
-                <Route path="/game/rankin">
+                <Route path="/game/ranking">
                     <RankingScreen />
                 </Route>
+
                 <Redirect to="/game/screen" />
             </Switch>
         </>
