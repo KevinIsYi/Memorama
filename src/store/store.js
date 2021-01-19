@@ -1,8 +1,10 @@
 import { createStore, combineReducers } from 'redux';
+import { boardReducer } from '../reducers/boardReducer';
 import { rankingReducer } from '../reducers/rankingReducer';
 
 const reducers = combineReducers({
-    ranking: rankingReducer
+    ranking: rankingReducer,
+    board: boardReducer
 });
 
 export const store = createStore(
