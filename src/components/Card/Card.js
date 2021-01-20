@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import './card.css';
-
 import PropTypes from 'prop-types'
+import './card.css';
 
 export const Card = ({ image }) => {
 
-    const [ flipValue, setFlipValue ] = useState(0);
+    const [ flipValue, setFlipValue ] = useState(1);
     const flipClasses = ['', 'is-flipped'];
 
     const flipCard = () => {
@@ -13,7 +12,7 @@ export const Card = ({ image }) => {
     }
 
     return (
-        <div className="scene scene--card">
+        <div className="scene scene--card center-x">
             <div
                 className={ `card ${ flipClasses[flipValue] }` }
                 onClick={ flipCard }

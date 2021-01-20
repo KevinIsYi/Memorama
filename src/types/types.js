@@ -5,5 +5,6 @@ export const types = {
     fillBoard: 3,
 
     startClock: 4,
-    stopClock: 5
+    stopClock: 5,
+    updateTime: 6
 };
