@@ -1,0 +1,8 @@
+.timer {
+    display: flex;
+    align-items: center;
+}
+
+.time-title {
+    margin-right: 10px;
+}
