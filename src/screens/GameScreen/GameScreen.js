@@ -17,6 +17,7 @@ export const GameScreen = () => {
 
     return (
         <div className="input-container">
+            
             <NameAndGridSize />
             <div className="card-container center-x" style={{
                 display: 'grid',
