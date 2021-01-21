@@ -1,20 +1,26 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types'
+import { useDispatch, useSelector } from 'react-redux';
+import { pickCard } from '../../actions/boardActions';
 import './card.css';
 
-export const Card = ({ image }) => {
+export const Card = ({ id, image, isCorrect, isPicked }) => {
 
-    const [ flipValue, setFlipValue ] = useState(1);
-    const flipClasses = ['', 'is-flipped'];
+    const dispatch = useDispatch();
+    const { board: { blockAll, total } } = useSelector(state => state);
+
+    const isFlippedClass = isPicked === 0 ? '' : 'is-flipped';
 
     const flipCard = () => {
-        setFlipValue((flipValue + 1) % 2);
+        if (!isCorrect && !blockAll && total < 2) {
+            console.log("Se va a mandar el id: ", id);
+            dispatch(pickCard(image, id));
+        }
     }
 
     return (
         <div className="scene scene--card center-x">
             <div
-                className={ `card ${ flipClasses[flipValue] }` }
+                className={ `card ${ isFlippedClass }` }
                 onClick={ flipCard }
             >
                 <div className="card__face card__face--front round-border">

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Swal from 'sweetalert2';
 import { Clock } from '../Clock/Clock';
-import { startClock, stopClock } from '../../actions/gridActions';
+import { startClock } from '../../actions/gridActions';
 import './nameAndGridSize.css';
 
 export const NameAndGridSize = () => {
@@ -47,10 +47,6 @@ export const NameAndGridSize = () => {
                 rows,
                 columns
             }));
-
-            setTimeout(() => {
-                dispatch(stopClock());
-            }, 10000);
         }
     }
 

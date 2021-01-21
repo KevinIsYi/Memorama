@@ -1,7 +1,10 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
 import { boardReducer } from '../reducers/boardReducer';
 import { gridOptionsReducer } from '../reducers/gridOptionsReducer';
 import { rankingReducer } from '../reducers/rankingReducer';
+
+const componeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
 const reducers = combineReducers({
     ranking: rankingReducer,
@@ -11,5 +14,7 @@ const reducers = combineReducers({
 
 export const store = createStore(
     reducers,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    componeEnhancers(
+        applyMiddleware(thunk)
+    )
 );

@@ -6,5 +6,12 @@ export const types = {
 
     startClock: 4,
     stopClock: 5,
-    updateTime: 6
+    updateTime: 6,
+
+    pickFirst: 7,
+    cardsMatch: 8,
+    unPick: 9,
+
+    blockAll: 10,
+    unBlockAll: 11
 };
