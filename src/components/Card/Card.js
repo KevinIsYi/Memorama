@@ -6,12 +6,12 @@ import './card.css';
 export const Card = ({ id, image, isCorrect, isPicked }) => {
 
     const dispatch = useDispatch();
-    const { board: { blockAll, total } } = useSelector(state => state);
+    const { board: { blockAll } } = useSelector(state => state);
 
     const isFlippedClass = isPicked === 0 ? '' : 'is-flipped';
 
     const flipCard = () => {
-        if (!isCorrect && !blockAll && total < 2) {
+        if (!isCorrect && !blockAll && isPicked === 1) {
             console.log("Se va a mandar el id: ", id);
             dispatch(pickCard(image, id));
         }
